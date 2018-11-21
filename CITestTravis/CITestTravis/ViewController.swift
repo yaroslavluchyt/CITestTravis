@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     lazy var variable = 1
+    lazy var some = "some"
 
     override func viewDidLoad() {
         super.viewDidLoad()
