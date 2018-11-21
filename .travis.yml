@@ -1,4 +1,4 @@
 os: osx
 osx_image: xcode10.1
 language: swift
-script: xcodebuild clean build test -project CITestTravis.xcodeproj -scheme CITestTravis -destination "platform=iOS Simulator,name=iPhone XR,OS=12.1" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+script: xcodebuild clean build test -project CITestTravis/CITestTravis.xcodeproj -scheme CITestTravis -destination "platform=iOS Simulator,name=iPhone XR,OS=12.1" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
