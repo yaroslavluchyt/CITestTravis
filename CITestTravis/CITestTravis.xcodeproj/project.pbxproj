@@ -12,7 +12,18 @@
 		5883F41521A57C1F00D0E584 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5883F41321A57C1F00D0E584 /* Main.storyboard */; };
 		5883F41721A57C2100D0E584 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5883F41621A57C2100D0E584 /* Assets.xcassets */; };
 		5883F41A21A57C2100D0E584 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5883F41821A57C2100D0E584 /* LaunchScreen.storyboard */; };
+		5883F42821A5855400D0E584 /* CITestTravisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5883F42721A5855400D0E584 /* CITestTravisTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5883F42A21A5855400D0E584 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5883F40421A57C1F00D0E584 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5883F40B21A57C1F00D0E584;
+			remoteInfo = CITestTravis;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5883F40C21A57C1F00D0E584 /* CITestTravis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CITestTravis.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +33,20 @@
 		5883F41621A57C2100D0E584 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5883F41921A57C2100D0E584 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5883F41B21A57C2100D0E584 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5883F42521A5855400D0E584 /* CITestTravisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CITestTravisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5883F42721A5855400D0E584 /* CITestTravisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CITestTravisTests.swift; sourceTree = "<group>"; };
+		5883F42921A5855400D0E584 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5883F40921A57C1F00D0E584 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5883F42221A5855400D0E584 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				5883F40E21A57C1F00D0E584 /* CITestTravis */,
+				5883F42621A5855400D0E584 /* CITestTravisTests */,
 				5883F40D21A57C1F00D0E584 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				5883F40C21A57C1F00D0E584 /* CITestTravis.app */,
+				5883F42521A5855400D0E584 /* CITestTravisTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +85,15 @@
 				5883F41B21A57C2100D0E584 /* Info.plist */,
 			);
 			path = CITestTravis;
+			sourceTree = "<group>";
+		};
+		5883F42621A5855400D0E584 /* CITestTravisTests */ = {
+			isa = PBXGroup;
+			children = (
+				5883F42721A5855400D0E584 /* CITestTravisTests.swift */,
+				5883F42921A5855400D0E584 /* Info.plist */,
+			);
+			path = CITestTravisTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +116,24 @@
 			productReference = 5883F40C21A57C1F00D0E584 /* CITestTravis.app */;
 			productType = "com.apple.product-type.application";
 		};
+		5883F42421A5855400D0E584 /* CITestTravisTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5883F42C21A5855400D0E584 /* Build configuration list for PBXNativeTarget "CITestTravisTests" */;
+			buildPhases = (
+				5883F42121A5855400D0E584 /* Sources */,
+				5883F42221A5855400D0E584 /* Frameworks */,
+				5883F42321A5855400D0E584 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5883F42B21A5855400D0E584 /* PBXTargetDependency */,
+			);
+			name = CITestTravisTests;
+			productName = CITestTravisTests;
+			productReference = 5883F42521A5855400D0E584 /* CITestTravisTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +146,10 @@
 				TargetAttributes = {
 					5883F40B21A57C1F00D0E584 = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					5883F42421A5855400D0E584 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 5883F40B21A57C1F00D0E584;
 					};
 				};
 			};
@@ -113,6 +167,7 @@
 			projectRoot = "";
 			targets = (
 				5883F40B21A57C1F00D0E584 /* CITestTravis */,
+				5883F42421A5855400D0E584 /* CITestTravisTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +183,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5883F42321A5855400D0E584 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,7 +202,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5883F42121A5855400D0E584 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5883F42821A5855400D0E584 /* CITestTravisTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5883F42B21A5855400D0E584 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5883F40B21A57C1F00D0E584 /* CITestTravis */;
+			targetProxy = 5883F42A21A5855400D0E584 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5883F41321A57C1F00D0E584 /* Main.storyboard */ = {
@@ -314,6 +392,46 @@
 			};
 			name = Release;
 		};
+		5883F42D21A5855400D0E584 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2PJ52UK33N;
+				INFOPLIST_FILE = CITestTravisTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yluch.CITestTravisTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CITestTravis.app/CITestTravis";
+			};
+			name = Debug;
+		};
+		5883F42E21A5855400D0E584 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2PJ52UK33N;
+				INFOPLIST_FILE = CITestTravisTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yluch.CITestTravisTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CITestTravis.app/CITestTravis";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -331,6 +449,15 @@
 			buildConfigurations = (
 				5883F41F21A57C2100D0E584 /* Debug */,
 				5883F42021A57C2100D0E584 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5883F42C21A5855400D0E584 /* Build configuration list for PBXNativeTarget "CITestTravisTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5883F42D21A5855400D0E584 /* Debug */,
+				5883F42E21A5855400D0E584 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
