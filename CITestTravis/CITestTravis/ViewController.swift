@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    lazy var variable = 1
+    lazy var variable = 10
 
     override func viewDidLoad() {
         super.viewDidLoad()
