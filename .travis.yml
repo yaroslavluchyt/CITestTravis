@@ -2,15 +2,16 @@ os: osx
 osx_image: xcode10.1
 language: swift
 script: 
-- xcodebuild clean build test -project CITestTravis/CITestTravis.xcodeproj -scheme CITestTravis -destination "platform=iOS Simulator,name=iPhone XR,OS=12.1" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
-- if [ $TRAVIS_BRANCH = 'master' ]; then touch prodFile2; echo "hello" >> prodFile2; fi
+- if [ ($TRAVIS_BRANCH = 'master') OR ($TRAVIS_BRANCH =~ ^release.*)]; then touch prodFile2; echo "hello" >> prodFile2; fi
+before_deploy:
+  - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)}
+  - git tag $TRAVIS_TAG
 deploy:
   provider: releases
   api_key: "$CI_USER_TOKEN"
   file_glob: true
   file:
     - "CITestTravis/file"
-    - "CITestTravis/prodFile"
     - "prodFile2"
   skip_cleanup: true
   on:
