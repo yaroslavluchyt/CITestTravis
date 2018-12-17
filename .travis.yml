@@ -15,7 +15,7 @@ deploy:
   file:
     - "CITestTravis/file"
     - "prodFile2"
-    - "file"
+    - "CITestTravis/CITestTravis/file"
   skip_cleanup: true
   on:
     all_branches: true
